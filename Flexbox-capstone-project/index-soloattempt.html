@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox Capstone Project</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    /* heading-container = navbar */
+    .heading-container {
+      width: 100%;
+      background-color: peru;
+      display: flex;
+      align-items: center;
+    }
+
+    .heading-container a {
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    /* .active {
+        }
+
+        .active a {
+          text-decoration: none;
+        } */
+
+    .links {
+      background-color: purple;
+      display: flex;
+      /* flex-direction: row; */
+      /* font-size: 20px; */
+      /* align-items: center; */
+
+      /* justify-content: space-between; */
+
+      /* display: grid;
+          grid-template-columns: 1fr 1fr; */
+    }
+
+    /* .links:hover {
+        } */
+
+    .links a {
+      text-decoration: none;
+      color: white;
+      /* display: flex; */
+
+      /* flex-direction: column; */
+      /* justify-content: space-between; */
+    }
+
+    .links a:hover {
+      color: royalblue;
+      background-color: white;
+    }
+
+    /* !!!!!HELP!!!!! */
+    /* .left-links {
+          display: flex;
+          flex-direction: row;
+          justify-content: right;
+
+          justify-content: flex-start;
+
+          margin-right: auto;
+        } */
+    .right-links {
+      /* display: flex; */
+      /* flex-direction: row; */
+      /* justify-content: flex-end; */
+
+      margin-left: auto;
+    }
+
+    /* .right-links a {
+          justify-content: flex-end;
+        } */
+
+    .link {
+      padding: 20px;
+      /* justify-content: space-between; */
+    }
+
+    /*      H A M B U R G E R    M E N U      */
+
+    /* Style the navigation menu */
+    /* .menu {
+          overflow: ;
+          background-color: peru;
+        } */
+
+    #dropbtn {
+      display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+      #dropbtn {
+        display: block;
+      }
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown a {
+      padding: 20px;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .dropdown #myLinks {
+      /* display: none; */
+    }
+
+    /* Style navigation menu links
+        .menu a {
+          color: white;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+
+          display: block;
+        } */
+
+    /* Style the hamburger menu
+        .dropdown a.dropbtn {
+          background: peru;
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0; }  */
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      padding: 12px 16px;
+      text-decoration: none;
+      color: royalblue;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: lightskyblue;
+    }
+
+    .show {
+      display: block;
+    }
+
+    /* Add a grey background color on mouse-over */
+
+    /* Style the active link (or home/logo) */
+    /* .active {
+          ;
+          color: white;
+        } */
+
+    /* <!-- Mobile hamburger  Menu Icon (Mobile Only) --> 
+     <button onclick="toggle" id="menu-link" class="mobile-menu"><i class="fas fa-bars"></i></button>
+    /* <!-- Mobile Menu Container --> 
+    <div id="menu-display"></div> */
+  </style>
+
+  <script src="hamburger-menu.js"></script>
+
+  <body>
+    <div class="heading-container">
+      <!-- heading container = navbar -->
+      <!-- Top Navigation Menu -->
+
+      <div class="dropdown">
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a onclick="toggle()" id="dropbtn" class="dropbtn">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- <a href="javascript:void(0);" class="dropbtn" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a> -->
+
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks" class="dropdown-content">
+          <a href="#link1">Link 1</a>
+          <a href="#link2">Link 2</a>
+          <a href="#link3">Link 3</a>
+        </div>
+      </div>
+      <a href="#">My Page</a>
+      <div class="links left-links">
+        <a href="#" class="link link1">Link 1</a>
+        <a href="#" class="link link2">Link 2</a>
+      </div>
+      <div class="links right-links">
+        <a href="#" class="link link3">Link 3</a>
+      </div>
+    </div>
+
+   <div class="middle-section">Hey</div>
+  </body>
+</html>
